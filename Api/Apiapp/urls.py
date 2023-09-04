@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path
 from Apiapp import views
 urlpatterns = [
-    path('api/get/Empdata/', views.EmployeeView.as_view()),
+    path('api/get/Empdata/<int:pk>', views.EmployeeView.as_view()),
     path('api/update/Empdata/<int:pk>', views.EmployeeView.as_view())
 ]
